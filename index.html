@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibeko Siphiwe | Welcome to my personal website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="Container" id="Welcome">
+
+        <div class="Navbar">
+
+            <div class="Logo">
+
+                <h2>Siphiwe.dev</h2>
+
+            </div>
+
+            <nav>
+
+                <div class="Menu" >
+
+                    <i class="fa-solid fa-bars" id="menu"></i>
+                    
+                    <div class="opt" id="opt">
+
+                        <a href="#Welcome">Home</a>
+                        <a href="#About">About</a>
+                        <a href="#Services">Services</a>
+                        <a href="#Projects">Projects</a>
+
+                    </div>
+
+                    <script>
+
+                        let menu = document.getElementById('menu');
+                        let option = document.getElementById('opt')
+
+                        menu.onclick=()=>{
+                            option.style.display = 'block';
+                        }
+
+                        option.onmouseleave=()=>{
+                            option.style.display = 'none';
+                        }
+
+                    </script>
+
+                </div>
+
+                <div class="Navigation">
+
+                    <a href="#Welcome">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Services">Services</a>
+                    <a href="#Projects">Projects</a>
+
+                </div>
+
+            </nav>
+
+        </div>    
+        
+        <div class="Welcome">
+
+            <h1>Sibeko Siphiwe</h1>
+
+            <h3>Programmer</h3>
+
+            <div class="Contact_details" id="details" onmouseleave="gone()" onclick="gone()">
+
+                <h2>Contact me</h2>
+
+                <div class="wrapper">
+                        
+                    <div class="Contacts">
+    
+                        <h4 style="text-align: left;">Contact details: </h4>
+    
+                        <p style="text-align: left;">
+                            WhatsApp: <br>083 552 7669<br>
+                            <br> 
+                            Mobile: <br>083 552 7669<br>
+                            <br>
+                            <a href="mailto: 2021934100@ufs4life.ac.za" style="color: #fff; text-decoration: none;">
+                                Email: <br>2021934100@ufs4life.ac.za<br>
+                            </a>
+                            <br>
+                            <a href="mailto: sibekosiphiwe79@gmail.com" style="color: #fff; text-decoration: none;">                       
+                                Altenate email: <br>sibekosiphiwe79@gmail.com
+                            </a>
+                        </p>
+
+                        <button style="width: 100%;" onclick="WhatsApp()">WhatsApp Now</button>
+    
+                    </div>
+
+                    <div class="Address">
+
+                        <h4 style="text-align: left;">Address: </h4>
+    
+                        <p style="text-align: left;">
+                            house address: <br>3650 Ext 4<br>
+                            <br> 
+                            City: <br>Vrede<br>
+                            <br>
+                            Town: <br>Thembalihle<br>
+                            <br>
+                            Postal Code: <br>9835
+                        </p>
+
+                        <button style="width: 100%;" onclick="Call()">Call Now</button>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button onclick="visible()" id="btn">Contact me</button>
+
+            <script>
+
+                const button = document.getElementById('btn');
+                const Contacts = document.getElementById('details');
+
+                function WhatsApp(){
+                    window.open ("https://web.whatsapp.com/send?phone=27835527669", "_black")
+                }
+
+                function Call(){
+                    window.open('tel:+0835527669');
+                }
+
+                function visible(){
+                    Contacts.style.display = 'block'
+                }
+
+                function gone(){
+                    Contacts.style.display = 'none';
+                }
+
+            </script>
+            
+
+            <p>This is where creativity meets technology, let me help you bring your vision online</p>
+
+        </div>
+
+        <div class="Accounts">
+
+            <div class="LinkedIn">
+
+                <a href="https://www.linkedin.com/in/siphiwe-sibeko-ba418a312/" target="_blank">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </a>
+
+            </div>
+
+            <div class="Github">
+
+                <a href="https://github.com/CyberGhost808" target="_blank">
+                    
+                    <i class="fa-brands fa-square-github"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="Container" id="About">
+
+        <h2>About me</h2>
+
+        <div class="Glass_card">
+
+            <h3>Hi there<br>I am Sibeko Siphiwe</h3>
+
+            <p>
+                I'm a second year student at the University of the Free State studying Bsc IT majoring in Computer Science 
+                and Management. I am a passionate programmer with a knack for being the best and being creative in the tech field. My journey in 
+                technology has been fueled by a love for problem-solving and a desire to bring greatest ideas to life. When I'm not coding, 
+                I love diving into my creative hobbies. Music is also a big part of my life. I enjoy creating instrumentals for different musical genres, trying out different instruments, 
+                and just to have fun with music. I also enjoy drawing and designing; sketching new ideas and creating art brings me a lot of joy.
+                I'm also life learner because I believe in limitless learning, so  I'm always on the lookout for new challenges and opportunities to grow.
+                Outside of work and hobbies, I'm a fan of exploring, I just love exploring new things, places and meeting new people. Let's connect and 
+                explore how we can collaborate or share our passions!
+            </p>
+
+        </div>
+
+        <i></i>
+
+        <div class="gif">
+
+            <img src="images/THanos.gif" alt="Thanos">
+
+        </div>        
+        
+    </div>
+
+    <div class="Container" id="Services">
+
+        <h2>Services</h2>
+
+        <div class="wrapper">
+
+            <div class="Service">
+
+                <div class="image">
+
+                    <img src="images/web.gif" alt="">
+
+                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    I build both static and dynamic website with frontend and backend, using technologies
+                    like React.js, HTML & CSS, Javascript, MySQL and PHP. I create secured, effective and efficient websites
+                    with the aim of bringing your vision online and ensuring your satisfication
+                </p>
+
+            </div>
+
+            <div class="Service">
+
+                <div class="image">
+
+                    <img src="images/app.gif" alt="">
+
+                </div>
+
+                <h3>Android Development</h3>
+
+                <p>
+                    I can also develop mobile application (specifically android apps) using java. I am also a full stack developer in mobile apps
+                    Development. I use Java language to develop android apps and SQLite for app database. I am currently learning to build cross 
+                    platform apps with react native for both android and iOS.
+                </p>
+
+            </div>
+
+            <div class="Service">
+
+                <div class="image">
+
+                    <img src="images/design.gif" alt="">
+
+                </div>
+
+                <h3>UX/UI Design</h3>
+
+                <p>
+                    I can also do software design, I use my UX/UI skills to create good looking applications and I can also design softwares 
+                    based on guidlines given by a client to bring the client's version digital. I follow all the user experience goal, usability goals and design 
+                    principles. I can help you design modern websites. I use FIGMA to do my designs.
+                </p>
+
+            </div>
+
+        </div>
+
+        <p>Crafting excellence with every project.</p>
+
+    </div>
+
+    <div class="Container" id="Projects">
+        
+        <div>
+
+            <h2>Projects</h2>
+
+            <p style="text-align: center;">These are some of the projects I have been working on. For exclusive projects contact me</p>
+
+            <div class="wrapper">
+
+                <div class="Project">
+
+                    <div class="Project_image">
+
+                        <img src="images/Cebisa Apparel.jpg" alt="">
+
+                    </div>
+
+                    <div class="Project_description">
+
+                        <h3>Cebisa Apparel (E-commerce)</h3>
+
+                        <p>This is an E-Commerce website for a local business. It's an ongoing project still incomplete
+                            it's primary objective is to allow clients to get products of the IBN Brand easier and safer. 
+                        </p>
+
+                        <a target="blank" href="https://cyberghost808.github.io/Zakwe/">
+
+                            <button>Visit Website</button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="Project">
+
+                    <div class="Project_image">
+
+                        <img src="images/Connect.png" alt="">
+
+                    </div>
+
+                    <div class="Project_description">
+
+                        <h3>Connect (Social Media)</h3>
+
+                            <p>
+                                This website is called Connect, I developed it to test my developing skills. 
+                                It's a social media site. Try it out and share it with your friends. 
+                                This is just a prototype, so don't worry about using real information it does not 
+                                offer authentication yet. It is a responsive website for any screen.
+                                <br>
+                                To view all other available users just click the search button and type "e" they will be displayed automatically 😀 
+                            </p>
+                        
+                            <a target="blank" href="https://asconnection.000webhostapp.com/">
+                            
+                                <button>Visit Website</button>
+                            
+                            </a>
+
+                    </div>
+
+                </div>
+
+                <div class="Project">
+
+                    <div class="Project_image">
+
+                        <img src="images/Riddle (Desktop view).PNG" alt="">
+
+                    </div>
+
+                    <div class="Project_description">
+
+                        <h3>Riddle me this (Game)</h3>
+
+                            <p>
+                                I have created this fun simple game called "Riddle me this". Please check it out and enjoy.
+
+                                <br><br>
+
+                                NB: You have 10 seconds to guess the riddle
+                            </p>
+
+                            <a target="blank" href="https://cyberghost808.github.io/Riddle-me-this/">
+
+                                <button>Visit Website</button>
+
+                            </a>
+
+                    </div>
+
+                </div>
+
+                <div class="Project">
+
+                    <div class="Project_image">
+
+                        <img src="images/The gaming hub.PNG" alt="">
+
+                    </div>
+
+                    <div class="Project_description">
+
+                        <h3>The gaming hub (Service)</h3>
+
+                            <p>
+                                This is also an ongoing project. I developed the gamiing hub for a gaming competition. This is for players to make join tournament, 
+                                see upcoming tournament, make transaction and join tournaments. There's actually more to this so this is by far my favourite project. 
+                            </p>
+
+                            <a target="blank" href="https://cyberghost808.github.io/The-gaming-gub/">
+
+                                <button>Visit Website</button>
+
+                            </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p style="text-align: center; font-size: 18px; text-shadow: 0 0 10px black;">
+            The best code is written with passion, not just proficiency.
+        </p>
+
+    </div>
+
+</body>
+</html>
